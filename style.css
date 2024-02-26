@@ -1,0 +1,270 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-shadow: border-box;
+}
+
+.navbar-section{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: azure;
+    /* border: 3px solid black; */
+    min-height: 100vh;
+    
+}
+.navbar{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 8px whitesmoke;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.logo{
+   position: absolute;
+   margin-left: 10%;
+}
+.icon{
+    position: absolute;
+    margin-left: 90%;
+}
+.icon i{
+    font-size: 2rem;
+}
+.icon i:hover{
+    font-size: 2.3rem;
+}
+.hero-section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+.hero-img{
+    margin-top: 3rem;
+}
+.content{
+    width: 40%;
+}
+.content-info{
+  margin-top: 5rem;
+}
+.content-info button{
+    background-color: rgb(135, 205, 50);
+    color:white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+   
+}
+.btnone{
+    height: 2rem;
+    width: 10rem;
+    padding: 5px;
+    transition: 0.2s ease-in;
+}
+.btnone:hover{
+    transform: scale(1.05);
+}
+.content h1{
+    margin-top: 1.5rem;
+    font-size: 3rem;
+}
+.content p{
+    font-size: 1.2rem;
+    padding: 1.2rem 4rem 0 0 ;
+    
+}
+.btntwo{
+    padding: 5px;
+    margin-top: 3rem;
+    transition: 0.2s ease-in-out;
+
+}
+.btntwo:hover{
+    /* font-size: 1.6rem; */
+    transform: scale(1.05);
+
+    
+}
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem 0px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    flex-wrap: wrap;
+}
+.cards img{
+    display: inline-block;
+}
+.card{
+    min-height:6rem;
+    width: 16rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    border: 1px solid whitesmoke;
+    box-shadow: 2px 2px 8px black;
+    margin-top: 1rem;
+    transition: 0.2s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.card:hover{
+    box-shadow: 3px 3px 10px  black;
+    transform: scale(1.05);
+
+}
+.divider{
+    border: 1px solid rgb(135, 205, 50);;
+}
+.manu-section{
+    width: 100%;
+    background-color:azure;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem
+}
+.manubtn button{
+    background-color: rgb(135, 205, 50);
+    height: 2.5rem;
+    width: 11rem;
+    color: azure;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+}
+.manubtn button:hover{
+   border: 1px solid white;
+   transform: scale(1.02);
+   transition: 0.2s ease-in;
+
+}
+.grid-img{
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.grid-img:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+.grid{
+    display: grid;
+    margin-top: 2rem;
+    gap: 10px;
+    grid-template-areas: 
+    "I1 I1 I2 I3 "
+    "I1 I1 I2 I7 "
+    "I4 I5 I6 I7";
+}
+.item1{
+   grid-area: I1;
+}
+.item2{
+    grid-area: I2;
+}
+ .item3{
+    grid-area: I3;
+}
+ .item4{
+    grid-area: I4;
+}
+ .item5{
+    grid-area: I5;
+}
+ .item6{
+    grid-area: I6;
+}
+ .item7{
+    grid-area: I7;
+}
+.footer-section{
+    min-height: 15rem;
+    background-color: bisque;
+    box-shadow: -10px -5px 10px white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.box{
+    height: 10rem;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 1rem;
+    
+}
+.box p{
+    opacity: 0.9;
+}
+.box input{
+    border: none;
+    height: 1.5rem;
+    border-radius: 5px;
+}
+.box p:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+.icons i{
+    font-size: 1.5rem;
+
+    
+}
+.icons i:hover{
+    transform: scale(1.5);
+}
+
+@media(max-width:786px){
+   
+    .hero-img{
+        display: flex;
+        justify-content: center;
+    }
+    .hero-img img{
+        width: 80%;
+    }
+    .card{
+        min-width: 400px;
+        margin-top: 1.5rem;
+    }
+    .content{
+        padding: 0 1rem;
+        align-items: center;
+        width: 100%;
+    }
+    .footer-section{
+        flex-direction: column;
+    }
+   
+
+}
+
+
